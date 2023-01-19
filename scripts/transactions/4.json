@@ -1,0 +1,53 @@
+{
+    "transactions": [
+        {
+            "date": "2022-11-16",
+            "type": 2,
+            "amount": -231.56,
+            "balance": 5487.25,
+            "description": "Biedronka 13"
+        },
+        {
+            "date": "2022-11-15",
+            "type": 4,
+            "amount": -31.56,
+            "balance": 5792.18,
+            "description": "PayU Spółka Akcyjna"
+        },
+        {
+            "date": "2022-11-15",
+            "type": 3,
+            "amount": 2237.69,
+            "balance": 5830.47,
+            "description": "Wynagrodzenie z tytułu Umowy o Pracę"
+        },
+        {
+            "date": "2022-11-14",
+            "type": 2,
+            "amount": -785.35,
+            "balance": 3555.55,
+            "description": "Carefour"
+        },
+        {
+            "date": "2022-11-14",
+            "type": 1,
+            "amount": 1000,
+            "balance": 4289.73,
+            "description": "Zrzutka na paliwo"
+        },
+        {
+            "date": "2022-11-13",
+            "type": 2,
+            "amount": -234.67,
+            "balance": 4213.45,
+            "description": "Decathlon"
+        },
+        {
+            "date": "2022-11-13",
+            "type": 2,
+            "amount": -95.37,
+            "balance": 4500,
+            "description": "Lidl"
+        }
+    ]
+}

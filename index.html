@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/transactions.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-menu">
+                <button class="nav-first-button">Logowanie</button>
+                <button class="nav-second-button">Rejstracja</button>
+            </div>
+
+            <button class="nav-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>  
+            <h1 class="nav-name">Lista transakcji</h1>          
+        </div>
+    </nav>
+
+    <main class="hello-page">
+
+    </main>
+
+    <main class="login-page hidden">
+        <form class="forms login-form" action="javascript:void(0);">
+            <label class="username login-username" for="username"><b>Nazwa Użytkownika lub e-mail</b></label>
+            <input required minlength="3" id="username" type="text" class="username-input login-username-input" placeholder="Wpisz nazwę użytkownika lub e-mail" name="username">
+            <span class="login-username-error hidden">Nieprawidłowa nazwa użytkownika lub hasło</span>
+
+            <label class="password login-password" for="password"><b>Hasło</b></label>
+            <input required minlength="6" type="password" class="password-input login-password-input" placeholder="Wpisz hasło" name="password">
+            <span class="login-password-error hidden">Nieprawidłowe nazwa użytkownika lub hasło</span>
+
+            <button class="submit login-submit" type="submit">Zaloguj</button>
+        </form>
+    </main>
+
+    <main class="registration-page hidden">
+        <form class="forms register-form" action="javascript:void(0);">
+            <label class="username register-username" for="username"><b>Nazwa Użytkownika</b></label>
+            <input class="username-input register-username-input" type="text" minlength="6" maxlength="16" placeholder="Wpisz nazwę użytkownika" name="username" required>
+            <span class="register-username-error hidden"></span>
+
+            <label class="email register-email" for="email"><b>e-mail</b></label>
+            <input class="email-input register-email-input" type="email" placeholder="Wpisz e-mail" name="email" id="email" required>
+            <span class="register-email-error hidden"></span>
+
+            <label class="email-repeat register-email-repeat" for="email-repeat"><b>powtórz e-mail</b></label>
+            <input class="email-input-repeat register-email-input-repeat" type="email" id="email-repeat" placeholder="Powtórz e-mail" name="email" required>
+            <span class="register-email-repeat-error hidden"></span>
+
+            <label class="password register-password" for="password"><b>Hasło</b></label>
+            <input class="password-input register-password-input" type="password" placeholder="Wpisz hasło" name="password" required>
+            <span class="register-password-error hidden">Hasło musi mieć conajmniej 6 znaków</span>
+
+            <button class="submit register-submit">Zarejstruj</button>
+        </form>
+    </main>
+
+    <main class="transaction-page hidden">
+        <article class="transaction-chart">
+            <canvas id="doughnut-chart" class="doughnut"></canvas>
+            <canvas id="bar-chart" class="bar"></canvas>
+        </article>
+        <article class="transactions-container">
+            <ul class="transactions-list"></ul>
+        </article>
+    </main>
+
+
+    
+
+
+    <script type="module" src="scripts/navbar.js"></script>
+    <script type="module" src="scripts/login.js"></script>
+    <script type="module" src="scripts/register.js"></script>
+    <script type="module" src="scripts/reload.js"></script>
+    <script type="module" src="scripts/transactions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+.transaction-page {
+    top: 120px;
+}
+
+.transaction-chart, .transactions-container {
+    height: 40vh;
+    margin: 10px;
+    border: 2px solid black;
+
+}
+
+.transaction-chart {
+    display: flex;
+    justify-content: space-around;
+}
+
+.transactions-container {
+    overflow-y: scroll;
+}
+
+.transactions-list {
+    display: block;
+}
+
+.doughnut, .dou-chart {
+    height: 20vh;
+    max-width: 40vw;
+}
+
+.bar, .bar-chart {
+    height: 20vh;
+    max-width: 40vw;
+}
+
+.transactions-list li {
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.transactions-list div {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.transactions-list div img {
+    height: 30px;
+    width: 30px;
+}
+
+.transactions-list li .li-date {
+    width: 150px;
+}
+
+.transactions-list li .li-img {
+    width: 30px;
+}
+
+.transactions-list li .li-description {
+    width: 450px;
+}
+
+.transactions-list li .li-description div {
+    display: block;
+}
+
+.transactions-list li .li-sum {
+    width: 150px;
+}
+
+.transactions-list li .li-balance {
+    width: 200px;
+}
+
+@media (max-width: 768px) {
+    .transaction-chart {
+        overflow-x: scroll;
+    }
+
+    .doughnut {
+        width: 80vw !important;
+    }
+
+    .bar {
+        width: 80vw !important;
+        display: none !important;
+    }
+}

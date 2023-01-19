@@ -1,0 +1,177 @@
+.forms {
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+}
+
+.login-page .forms {
+    height: 400px;
+}
+
+.registration-page .forms {
+    height: 650px;
+}
+
+.forms label, .forms input, .forms button, .forms span {
+    text-align: center;
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+.forms input, .forms button {
+    transition: 0.8s;
+    background-color: var(--light);
+    border: 2px solid var(--primary);
+    border-radius: 99px;
+}
+
+.login-username-error, .login-password-error, .register-username-error, .register-email-error, .register-email-repeat-error, .register-password-error {
+    text-align: center;
+    color: red;
+    font-size: small;
+    overflow: hidden;
+}
+
+.forms input:hover, .forms button:hover, .forms input:focus {
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+    color: var(--light);
+}
+
+.forms button:active {
+    opacity: 60%;
+}
+
+.forms input:hover::placeholder, .forms input:focus::placeholder {
+    color: transparent;
+}
+
+.login-username {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.login-username-input {
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.login-username-error {
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+
+.login-password {
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+
+.login-password-input {
+    grid-row-start: 9;
+    grid-row-end: 11;
+}
+
+.login-password-error {
+    grid-row-start: 11;
+    grid-row-end: 13;
+}
+
+.login-submit {
+    grid-row-start: 14;
+    grid-row-end: 16;
+}
+
+.register-username {
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.register-username-input {
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.register-username-error {
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.register-email {
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+.register-email-input {
+    grid-row-start: 5;
+    grid-row-end: 5;
+}
+
+.register-email-error {
+    grid-row-start: 6;
+    grid-row-end: 6;
+}
+
+.register-email-repeat {
+    grid-row-start: 7;
+    grid-row-end: 7;
+}
+
+.register-email-input-repeat {
+    grid-row-start: 8;
+    grid-row-end: 8;
+}
+
+.register-email-repeat-error {
+    grid-row-start: 9;
+    grid-row-end: 9;
+}
+
+.register-password {
+    grid-row-start: 10;
+    grid-row-end: 10;
+}
+
+.register-password-input {
+    grid-row-start: 11;
+    grid-row-end: 11;
+}
+
+.register-submit {
+    grid-row-start: 13;
+    grid-row-end: 13;
+}
+
+@media (max-width: 1200px) {
+    .forms label, .forms input, .forms button, .forms span {
+        grid-column-start: 4;
+        grid-column-end: 8;
+        font-size: small;
+    }
+}
+
+@media (max-width: 768px) {
+    .forms label, .forms input, .forms button, .forms span {
+        grid-column-start: 3;
+        grid-column-end: 9;
+    }
+}
+
+.login-username-error:hover, .login-password-error:hover, .register-username-error:hover, .register-email-error:hover, .register-email-repeat-error:hover, .register-password-error:hover {
+    overflow-y: scroll;
+}
+
+.forms span::-webkit-scrollbar {
+    width: 5px;
+}
+
+.forms span::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.forms span::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.forms span::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
